@@ -1,2 +1,2 @@
-string = 'i.love,Dana '
+string = 'Hello. Friend '
 print(string.replace(' ', ':').replace('.', ':').replace(',', ':'))
