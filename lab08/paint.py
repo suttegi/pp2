@@ -12,6 +12,7 @@ screen.fill((255,255,255))
 #create a panel surface for buttons
 panel = pg.Surface((800,100))
 
+
 #buttons for switching colors
 red_button = pg.draw.rect(panel,(255,0,0),(10,10,30,30))
 green_button = pg.draw.rect(panel,(0,255,0),(50,10,30,30))

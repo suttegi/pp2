@@ -5,6 +5,7 @@ pg.init()  # Initializing Pygame
 screen = pg.display.set_mode((400, 600))
 clock = pg.time.Clock()
 
+
 #upload resources
 background = pg.image.load('resource/AnimatedStreet.png').convert_alpha()
 player = pg.image.load('resource/Player.png').convert_alpha()
