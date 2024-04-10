@@ -70,13 +70,13 @@ while True:
         break
     if coin_rect.colliderect(player_rect) and not coin_collected:
         point += 1
-        speed+=point*0.5
+
         coin_collected = True  
         coin_rect.x = -coin_rect.width
 
     #render the text of score
     score = pg.font.Font(None, 36)
-    score_text = score.render(f"Score: {point}", True, (255, 255, 255))
+    score_text = score.render(f"Score: {point}", True, (0,0,0))
 
 
     #draw all the elements
@@ -84,6 +84,6 @@ while True:
     screen.blit(player, player_rect)
     screen.blit(enemy, enemy_rect)
     screen.blit(coin, coin_rect)
-    screen.blit(score_text, (10, 10))
+    screen.blit(score_text, score_text.get_rect(topright=screen.get_rect().topright))
     pg.display.update()
     clock.tick(60)
