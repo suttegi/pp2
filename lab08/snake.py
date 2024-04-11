@@ -11,8 +11,8 @@ screen = pg.display.set_mode((wh, wh))
 dx, dy = 0, 0
 size = 20
 speed = 10  
-segments = [(randrange(0, wh), randrange(0, wh))]  
-point_x, point_y = randrange(0, wh), randrange(0, wh)  
+segments = [(randrange(0, wh,size), randrange(0, wh,size))]  
+point_x, point_y = randrange(0, wh,size), randrange(0, wh,size)  
 
 clock = pg.time.Clock()  # Creating clock for time control in the game
 
